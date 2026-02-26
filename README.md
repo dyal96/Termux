@@ -101,3 +101,7 @@ Run the Desktop: Start the VNC server to enable GUI access:
 
 Connect: Open a VNC Viewer app (like VNC Viewer) and connect to 127.0.0.1:5901. 
 
+### VM using QEMU and Docker in Termux
+Setup VM using [This Thread](https://medium.com/@kumargaurav.pandey/vms-on-mobile-without-root-yes-please-f14f473deec7)
+Setup Docker [using this thread](https://medium.com/@kumargaurav.pandey/docker-on-mobile-that-too-without-root-how-7b0848833c42)
+
