@@ -65,3 +65,37 @@ Setup adb in adding the path of enviorment variables.
 Download , Extract , Run Scrcpy.exe [Scrapy ](https://github.com/Genymobile/scrcpy/releases)
 
 
+### Steps to Install Ubuntu Desktop in Termux
+
+Install/Update Termux: Use the F-Droid version for better compatibility, then run:
+
+`pkg update && pkg upgrade.`
+
+Install proot-distro: Install the tool that allows running Linux distributions:
+
+`pkg install proot-distro`
+
+Install Ubuntu: Download and install the Ubuntu image:
+
+`proot-distro install ubuntu`
+
+Login to Ubuntu:
+
+`proot-distro login ubuntu`
+
+Update and Install GUI (XFCE): Inside the Ubuntu container, update packages and install the desktop environment:
+
+`apt update && apt upgrade -y`
+`apt install xfce4 xfce4-goodies tigervnc-standalone-server -y`
+
+Configure VNC: Set up a password and configure VNC:
+`
+vncserver
+### Set a password
+`
+Run the Desktop: Start the VNC server to enable GUI access:
+
+`vncserver -geometry 1280x720 :1`
+
+Connect: Open a VNC Viewer app (like VNC Viewer) and connect to 127.0.0.1:5901. 
+
