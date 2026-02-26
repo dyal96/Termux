@@ -18,8 +18,8 @@ Install Proot by `pkg install proot-distro`
 Install Debian by `proot-distro install debian`
 
  See Available Distros in by `proot-distro list`
-
-Supported distributions (format: name < alias >):
+<details>
+</summary> Supported distributions (format: name < alias >): </summary>
 
   * Adélie Linux < adelie >
   * AlmaLinux < almalinux >
@@ -39,7 +39,7 @@ Supported distributions (format: name < alias >):
   * Trisquel GNU/Linux < trisquel >
   * Ubuntu (25.10) < ubuntu >
   * Void Linux < void >
-
+</details>
 Install selected one with: proot-distro install <alias>
 
 
@@ -66,6 +66,8 @@ Download , Extract , Run Scrcpy.exe [Scrapy ](https://github.com/Genymobile/scrc
 
 
 ### Steps to Install Ubuntu Desktop in Termux
+
+For Modded Ubuntu you can try this[ Ubuntu Mod Repo](https://github.com/modded-ubuntu/modded-ubuntu)
 
 Install/Update Termux: Use the F-Droid version for better compatibility, then run:
 
