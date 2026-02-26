@@ -5,9 +5,9 @@ Useful Commands and Troubleshoots
 
 run this command in termux terminal ` pkg install openssh `
 
-Run SSH ` sshd `
+Run SSH ` sshd ` in termux terminal
 
-Find Username by running ` whoami ` in termux
+Find Username by running ` whoami ` in termux 
 
 Set Password for login by running ` passwd ` command
 
@@ -49,7 +49,7 @@ Download [ADB ( Platform Tools )](https://developer.android.com/tools/releases/p
 
 Windows Powershell `adb forward tcp:8022 tcp:8022 ; ssh -p 8022 root@localhost`
 
-Linux ` adb forward tcp:8022 tcp:8022 && adb forward tcp:8080 tcp:8080&& ssh localhost -p 8022 `
+Linux ` adb forward tcp:8022 tcp:8022 && adb forward tcp:8080 tcp:8080 && ssh localhost -p 8022 `
 
 This will also setup the port 8080, which is used by the httpd webserver on termux
 
