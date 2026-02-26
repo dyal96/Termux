@@ -61,4 +61,7 @@ Setup adb in adding the path of enviorment variables.
 - Install Apk in Phone ( Available in Zip File )
 - Run CMD in Folder and Then ` gnirehtet.exe run ` there should be adb already in path. 
 
+### Mirror Screen on PC using Scrcpy
+Download , Extract , Run Scrcpy.exe [Scrapy ](https://github.com/Genymobile/scrcpy/releases)
+
 
