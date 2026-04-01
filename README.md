@@ -13,7 +13,7 @@ Set Password for login by running ` passwd ` command
 
 Configure SSH Daemon for Root Login:
 
-Open the sshd_config file for editing using a text editor like nano: `nano /etc/ssh/sshd_config.`
+Open the sshd_config file for editing using a text editor like nano: `nano usr/etc/ssh/sshd_config.` 
 
 Find the line that says #PermitRootLogin prohibit-password or `#PermitRootLogin yes` (it may be commented out with a #).
 
