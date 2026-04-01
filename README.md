@@ -41,6 +41,36 @@ Install Debian by `proot-distro install debian`
   * Void Linux < void >
 </details>
 Install selected one with: proot-distro install <alias>
+ 
+### ADB Port Forwading
+ADB port forwarding is a mechanism in the Android Debug Bridge command-line tool that allows you to **forward TCP traffic between your development machine and an Android device (or emulator)**. This is particularly useful for debugging network applications.  
+
+Key Commands
+
+There are two primary commands for port forwarding: 
+
+- **`adb forward`**: Forwards a port on your computer to a port on the Android device.
+    - **Syntax**: `adb forward tcp:<local_computer_port> tcp:<device_port>`
+    - **Example**: `adb forward tcp:8080 tcp:3000`
+    - **Result**: Traffic sent to port `8080` on your development machine is funneled to port `3000` on the connected Android device. This is useful for accessing a server running on the device from your computer's browser or other tools.
+- **`adb reverse`**: Forwards a port on the device to a port on your development machine. This is the inverse of `adb forward`.
+    - **Syntax**: `adb reverse tcp:<device_port> tcp:<host_computer_port>`
+    - **Example**: `adb reverse tcp:9090 tcp:8080`
+    - **Result**: Traffic sent to port `9090` on the Android device is redirected to port `8080` on your development machine. This is commonly used when you have a web server running on your computer (e.g., a local development server) and want to access it from an app or browser on the device.
+
+Management Commands
+
+- **List existing forwards**: `adb forward --list`
+- **Remove a specific forward**: `adb killforward:<local_computer_port>`
+- **Remove all forwards**: `adb killforward-all`
+- **Remove a specific reverse forward**: `adb killreverse:<device_port>` (or `adb reverse --remove tcp:<device_port>`)
+- **Remove all reverse forwards**: `adb reverse --remove-all` 
+
+Prerequisites
+
+- You need the [Android SDK Platform Tools](https://developer.android.com/tools/releases/platform-tools) installed and accessible from your command line.
+- **USB debugging** must be enabled in the Developer options on your Android device.
+- The device should be connected to your computer (either via USB or wireless debugging). You can verify the connection by running `adb devices`.
 
 
 ### Install SSH via USB using ADB
