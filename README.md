@@ -11,6 +11,16 @@ Find Username by running ` whoami ` in termux
 
 Set Password for login by running ` passwd ` command
 
+Configure SSH Daemon for Root Login:
+
+Open the sshd_config file for editing using a text editor like nano: `nano /etc/ssh/sshd_config.`
+
+Find the line that says #PermitRootLogin prohibit-password or `#PermitRootLogin yes` (it may be commented out with a #).
+
+Change it to PermitRootLogin yes and remove the # if present.
+
+You might also need to add the line `StrictModes no` if you encounter permission issues later.
+
 ### Install PROOT-Distros 
 
 Install Proot by `pkg install proot-distro`
