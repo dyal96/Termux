@@ -16,6 +16,7 @@ Configure SSH Daemon for Root Login:
 Open the sshd_config file for editing using a text editor like nano: `nano usr/etc/ssh/sshd_config.` 
 
 Find the line that says #PermitRootLogin prohibit-password or `#PermitRootLogin yes` (it may be commented out with a #).
+also set or add `Port 8022`
 
 Change it to PermitRootLogin yes and remove the # if present.
 
