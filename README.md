@@ -108,6 +108,8 @@ Download , Extract , Run Scrcpy.exe [Scrapy ](https://github.com/Genymobile/scrc
 
 ### Steps to Install Ubuntu Desktop in Termux
 
+if you want Xubuntu this is great repo by [Termux Ubuntu]( https://github.com/jorexdeveloper/termux-ubuntu) jorexdeveloper
+
 For Modded Ubuntu you can try this[ Ubuntu Mod Repo](https://github.com/modded-ubuntu/modded-ubuntu)
 
 Install/Update Termux: Use the F-Droid version for better compatibility, then run:
